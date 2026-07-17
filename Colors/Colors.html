@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Colors Studio | Vikram Pal</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f4f7ff 0%, #eef4ff 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .color-card { transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; }
+        .color-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; }
+        .color-box { height: 120px; border-radius: 8px 8px 0 0; }
+        .container.my-4 {
+            background: linear-gradient(135deg, #eaf2ff 0%, #ffffff 100%);
+            border: 1px solid #dce7ff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="#"><i class="fa-solid fa-palette me-2"></i>BOOTSTRAP COLOR STUDIO</a>
+            <span class="navbar-text d-none d-sm-inline-block text-white-50">Developed by Vikram Pal</span>
+        </div>
+    </nav>
+
+    <!-- HEADER JUMBOTRON -->
+    <div class="container my-4 text-center p-5 bg-white rounded shadow-sm">
+        <h1 class="display-5 fw-bold text-dark">Bootstrap 5 Theme Colors</h1>
+        <p class="lead text-muted">Ek aisa static project jo aapko sabhi utility color classes, gradients aur text combinations ka live preview dikhata hai.</p>
+        <span class="badge bg-primary px-3 py-2 rounded-pill">BCA 2nd Year Practice</span>
+    </div>
+
+    <div class="container">
+        
+        <!-- SECTION 1: BACKGROUND & THEME COLORS -->
+        <h3 class="fw-bold mb-4 text-secondary"><i class="fa-solid fa-fill-drip me-2"></i>1. Standard Theme Backgrounds</h3>
+        <div class="row g-4 mb-5">
+            
+            <!-- Primary Card -->
+            <div class="col-6 col-md-3">
+                <div class="card color-card border-0 h-100 shadow-sm" onclick="alert('Class used: bg-primary text-white')">
+                    <div class="color-box bg-primary d-flex align-items-center justify-content-center text-white">
+                        <i class="fa-solid fa-circle-check fa-2x"></i>
+                    </div>
+                    <div class="card-body text-center bg-white rounded-bottom">
+                        <h6 class="fw-bold mb-0">Primary</h6>
+                        <small class="text-muted">.bg-primary</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Card -->
+            <div class="col-6 col-md-3">
+                <div class="card color-card border-0 h-100 shadow-sm" onclick="alert('Class used: bg-success text-white')">
+                    <div class="color-box bg-success d-flex align-items-center justify-content-center text-white">
+                        <i class="fa-solid fa-square-poll-horizontal fa-2x"></i>
+                    </div>
+                    <div class="card-body text-center bg-white rounded-bottom">
+                        <h6 class="fw-bold mb-0">Success</h6>
+                        <small class="text-muted">.bg-success</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Danger Card -->
+            <div class="col-6 col-md-3">
+                <div class="card color-card border-0 h-100 shadow-sm" onclick="alert('Class used: bg-danger text-white')">
+                    <div class="color-box bg-danger d-flex align-items-center justify-content-center text-white">
+                        <i class="fa-solid fa-triangle-exclamation fa-2x"></i>
+                    </div>
+                    <div class="card-body text-center bg-white rounded-bottom">
+                        <h6 class="fw-bold mb-0">Danger</h6>
+                        <small class="text-muted">.bg-danger</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Warning Card -->
+            <div class="col-6 col-md-3">
+                <div class="card color-card border-0 h-100 shadow-sm" onclick="alert('Class used: bg-warning text-dark')">
+                    <div class="color-box bg-warning d-flex align-items-center justify-content-center text-dark">
+                        <i class="fa-solid fa-bolt fa-2x"></i>
+                    </div>
+                    <div class="card-body text-center bg-white rounded-bottom">
+                        <h6 class="fw-bold mb-0">Warning</h6>
+                        <small class="text-muted">.bg-warning</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Card -->
+            <div class="col-6 col-md-3">
+                <div class="card color-card border-0 h-100 shadow-sm" onclick="alert('Class used: bg-info text-dark')">
+                    <div class="color-box bg-info d-flex align-items-center justify-content-center text-dark">
+                        <i class="fa-solid fa-info fa-2x"></i>
+                    </div>
+                    <div class="card-body text-center bg-white rounded-bottom">
+                        <h6 class="fw-bold mb-0">Info</h6>
+                        <small class="text-muted">.bg-info</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dark Card -->
+            <div class="col-6 col-md-3">
+                <div class="card color-card border-0 h-100 shadow-sm" onclick="alert('Class used: bg-dark text-white')">
+                    <div class="color-box bg-dark d-flex align-items-center justify-content-center text-white">
+                        <i class="fa-solid fa-moon fa-2x"></i>
+                    </div>
+                    <div class="card-body text-center bg-white rounded-bottom">
+                        <h6 class="fw-bold mb-0">Dark</h6>
+                        <small class="text-muted">.bg-dark</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary Card -->
+            <div class="col-6 col-md-3">
+                <div class="card color-card border-0 h-100 shadow-sm" onclick="alert('Class used: bg-secondary text-white')">
+                    <div class="color-box bg-secondary d-flex align-items-center justify-content-center text-white">
+                        <i class="fa-solid fa-gear fa-2x"></i>
+                    </div>
+                    <div class="card-body text-center bg-white rounded-bottom">
+                        <h6 class="fw-bold mb-0">Secondary</h6>
+                        <small class="text-muted">.bg-secondary</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Light Card -->
+            <div class="col-6 col-md-3">
+                <div class="card color-card border-0 h-100 shadow-sm" onclick="alert('Class used: bg-light text-dark')">
+                    <div class="color-box bg-light border-bottom d-flex align-items-center justify-content-center text-dark">
+                        <i class="fa-solid fa-sun fa-2x"></i>
+                    </div>
+                    <div class="card-body text-center bg-white rounded-bottom">
+                        <h6 class="fw-bold mb-0">Light</h6>
+                        <small class="text-muted">.bg-light</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECTION 2: GRADIENT OPTIONS -->
+        <h3 class="fw-bold mb-4 text-secondary"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>2. Gradient Option Effects</h3>
+        <div class="row mb-5">
+            <div class="col-md-6 mb-3">
+                <div class="p-4 bg-primary bg-gradient text-white rounded shadow-sm">
+                    <h4 class="fw-bold">Blue Gradient</h4>
+                    <p class="mb-0">Class: <code>.bg-primary.bg-gradient</code>. Yeh top-to-bottom halka fading effect deta hai.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="p-4 bg-danger bg-gradient text-white rounded shadow-sm">
+                    <h4 class="fw-bold">Red Gradient</h4>
+                    <p class="mb-0">Class: <code>.bg-danger.bg-gradient</code>. Buttons aur panels par accha lagta hai.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: TEXT COLORS & COMBINATIONS -->
+        <h3 class="fw-bold mb-4 text-secondary"><i class="fa-solid fa-font me-2"></i>3. Text Typography Colors</h3>
+        <div class="card border-0 shadow-sm p-4 mb-5 bg-white">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-primary fw-bold">.text-primary (Blue Theme Text)</h5>
+                    <h5 class="text-success fw-bold">.text-success (Green Success Text)</h5>
+                    <h5 class="text-danger fw-bold">.text-danger (Red Danger Text)</h5>
+                    <h5 class="text-warning bg-dark p-1 d-inline-block rounded fw-bold">.text-warning (Yellow Text)</h5>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-muted">This is muted text using <code>.text-muted</code> class (kam bright dikhane ke liye).</p>
+                    <p class="text-body-secondary">This is secondary body color using <code>.text-body-secondary</code>.</p>
+                    <p class="text-black-50">Black text with 50% opacity using <code>.text-black-50</code>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: INTERACTIVE COLOR TESTING FORM -->
+        <h3 class="fw-bold mb-4 text-secondary"><i class="fa-solid fa-vial me-2"></i>4. Dynamic Button Colors Lab</h3>
+        <div class="card border-0 shadow-sm p-4 mb-5 bg-white text-center">
+            <p class="lead mb-4">Niche diye gaye buttons par hover karke unke styles aur variations ko test kariye:</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <button class="btn btn-primary btn-lg">Solid Primary</button>
+                <button class="btn btn-outline-success btn-lg">Outline Success</button>
+                <button class="btn btn-danger">Solid Danger</button>
+                <button class="btn btn-outline-warning text-dark">Outline Warning</button>
+                <button class="btn btn-dark rounded-pill px-4">Pill Shape Dark</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1"><i class="fa-solid fa-code text-warning"></i> Vikram's Bootstrap Color Dashboard Project</p>
+            <small class="text-white-50"> 2026 | Pure Static Grid, Components & Utilities Showcase</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
