@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikram Pal | Portfolio</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { scroll-behavior: smooth; }
+        .hero-section { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR (sticky-top option ke sath) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">VIKRAM PAL</a>
+            <button class="navbar-expand-lg navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <section id="home" class="hero-section py-5 text-center">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold mb-3">Hi, I'm Vikram Pal</h1>
+            <p class="lead mb-4">BCA Student & Aspiring Full-Stack Developer based in Bihar</p>
+            <a href="#projects" class="btn btn-warning btn-lg fw-bold px-4">View My Work</a>
+        </div>
+    </section>
+
+    <!-- 3. ABOUT & INFO SECTION (Grid System & Badges) -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <p class="lead">Main Bihar ka rehne wala hu aur abhi apna **BCA (Bachelor of Computer Applications)** pursue kar rha hu. Mera 1st year successfully complete ho chuka hai.</p>
+                    <p>Mujhe technology aur programming ke sath naye-naye web applications banana pasand hai. Yeh project mere frontend skills ka ek chota sa udaharan hai.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <strong>Age:</strong> <span class="badge bg-primary rounded-pill">20 Years</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <strong>Current Education:</strong> <span class="badge bg-success rounded-pill">BCA (2nd Year)</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <strong>Gender:</strong> <span class="badge bg-secondary rounded-pill">Male</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SKILLS SECTION (Progress Bars Option) -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">My Skills</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5>HTML5 & CSS3</h5>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5>Bootstrap 5</h5>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5>Python / Basic Coding</h5>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-warning text-dark progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5>Core Computer Science (1st Year)</h5>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PROJECTS SECTION (Bootstrap Cards & Modals Interaction) -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">My Static Projects</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">Google Clone</h5>
+                            <p class="card-text">HTML aur CSS .</p>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project1Modal">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-success"> Layout Practice</h5>
+                            <p class="card-text"> grid system </p>
+                            <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#project2Modal">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-warning text-dark">Personal Portfolio</h5>
+                            <p class="card-text"> live project </p>
+                            <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#project3Modal">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT MODALS (Pop-ups Options) -->
+    <div class="modal fade" id="project1Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Google Clone Details</h5>
+                    <button type="button" class="btn-close" data-bs-shadow="none" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                     logo aur custom styling ko align 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project2Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> Layout Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Cards aur Responsive Grid classes ka use karke product list ko manage karne ka abhyas kiya gya hai.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project3Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Portfolio Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Isme  Navbar, Cards, Modals, Progress bars, aur Forms ko ek sath connect kiya gya hai.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. CONTACT SECTION (Form Option) -->
+    <section id="contact" class="py-5">
+        <div class="container" style="max-width: 600px;">
+            <h2 class="text-center mb-4 fw-bold">Contact Me</h2>
+            <form onsubmit="alert('Thank you Vikram! Demo Form Submitted.'); return false;">
+                <div class="mb-3">
+                    <label class="form-label">Your Name</label>
+                    <input type="text" class="form-control" required placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" required placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="4" required placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 Vikram Pal | </p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
